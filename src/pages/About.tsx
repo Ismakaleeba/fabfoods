@@ -80,7 +80,11 @@ const About = () => {
                         Whether you're planning an event or looking for the perfect creative workspace, we're here to fuel your innovation.
                     </p>
                     <div className="flex justify-center">
-                        <Button size="lg" className="px-12 py-4 text-lg shadow-xl hover:shadow-primary/30 transition-all">
+                        <Button
+                            size="lg"
+                            className="px-12 py-4 text-lg shadow-xl hover:shadow-primary/30 transition-all"
+                            onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.GENERAL)}
+                        >
                             Get in Touch <ArrowRight className="ml-2 w-6 h-6" />
                         </Button>
                     </div>

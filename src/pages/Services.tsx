@@ -39,6 +39,13 @@ const Services = () => {
         }
     ];
 
+    const getTemplateMessage = (title: string): string => {
+        if (title.includes("Food")) return WHATSAPP_TEMPLATES.ORDER;
+        if (title.includes("Catering")) return WHATSAPP_TEMPLATES.CATERING;
+        if (title.includes("Event")) return WHATSAPP_TEMPLATES.EVENT;
+        return WHATSAPP_TEMPLATES.PROTOTYPE;
+    };
+
     return (
         <>
             {/* ... hero section remains same ... */}

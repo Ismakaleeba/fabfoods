@@ -1,6 +1,7 @@
 import { Users, Zap, Target, ArrowRight } from 'lucide-react';
 import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
+import { openWhatsApp, WHATSAPP_TEMPLATES } from '../utils/whatsapp';
 import bgProcess from '../assets/food/service_prototype.jpg';
 
 const Prototype = () => {
@@ -19,7 +20,10 @@ const Prototype = () => {
                         <p className="text-xl text-slate-300 leading-relaxed mb-8">
                             A digital platform and event series that connects young people to real opportunities, mentors, and innovation communities.
                         </p>
-                        <Button className="bg-primary text-white hover:bg-orange-700 border-none transition-all shadow-lg hover:shadow-primary/25">
+                        <Button
+                            className="bg-primary text-white hover:bg-orange-700 border-none transition-all shadow-lg hover:shadow-primary/25"
+                            onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.PROTOTYPE)}
+                        >
                             Join the Community <ArrowRight className="ml-2 w-5 h-5" />
                         </Button>
                     </div>
@@ -113,7 +117,11 @@ const Prototype = () => {
                     <p className="text-xl text-slate-600 mb-10">
                         Join Kigali's fastest-growing community of young innovators and start your journey today.
                     </p>
-                    <Button size="lg" className="px-12 py-4 text-lg shadow-xl hover:shadow-primary/30 transition-all">
+                    <Button
+                        size="lg"
+                        className="px-12 py-4 text-lg shadow-xl hover:shadow-primary/30 transition-all"
+                        onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.PROTOTYPE)}
+                    >
                         Join the Community Now <ArrowRight className="ml-2 w-6 h-6" />
                     </Button>
                 </div>

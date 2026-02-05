@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { ChefHat, Leaf, HeartPulse } from 'lucide-react';
 import Section from '../components/ui/Section';
+import Button from '../components/ui/Button';
+import { openWhatsApp, WHATSAPP_TEMPLATES } from '../utils/whatsapp';
 import dish1 from '../assets/food/gallery_lunch.jpg';
 import dish2 from '../assets/food/gallery_dinner.jpg';
 import dish3 from '../assets/food/gallery_specialties.jpg';
@@ -209,6 +211,23 @@ const Menu = () => {
                             <p className="text-sm text-slate-400">Specify requirements to our team.</p>
                         </div>
                     </div>
+                </div>
+            </Section>
+
+            {/* CTA Section */}
+            <Section className="text-center">
+                <div className="max-w-3xl mx-auto">
+                    <h2 className="text-3xl md:text-5xl font-bold font-display text-secondary mb-6">Hungry for Innovation?</h2>
+                    <p className="text-xl text-slate-600 mb-10">
+                        Our team is ready to fuel your next big idea with fresh, maker-inspired meals.
+                    </p>
+                    <Button
+                        size="lg"
+                        className="bg-primary hover:bg-orange-600 text-white border-none px-10 shadow-lg"
+                        onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.ORDER)}
+                    >
+                        Order via WhatsApp Now
+                    </Button>
                 </div>
             </Section>
         </>
