@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Utensils, Truck, Calendar, Lightbulb } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Section from '../components/ui/Section';
-import Card from '../components/ui/Card';
 import { Link } from 'react-router-dom';
 import gallerySnacks from '../assets/food/gallery_snacks.jpg';
 import galleryLunch from '../assets/food/gallery_lunch.jpg';
