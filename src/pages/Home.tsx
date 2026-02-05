@@ -64,7 +64,7 @@ const Home = () => {
 
             <Section
                 title="What We Do"
-                subtitle="Fueling the ecosystem with culinary excellence and professional event support."
+                subtitle="Fueling the ecosystem with culinary excellence and professional event support services."
                 background="gray"
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
