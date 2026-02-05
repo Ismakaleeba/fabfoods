@@ -155,7 +155,7 @@ const Home = () => {
             </Section>
 
             {/* Who We Serve */}
-            <Section title="Who We Serve" className="relative h-[600px] flex items-center overflow-hidden bg-slate-900">
+            <Section className="relative h-[600px] flex items-center overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={whoWeServeImg}
