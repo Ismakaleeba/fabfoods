@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Utensils, Truck, ChefHat, Sparkles, Users } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Section from '../components/ui/Section';
 import { Link } from 'react-router-dom';
