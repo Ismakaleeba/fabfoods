@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import Button from '../ui/Button';
 
+import logo from '../../assets/logo.png';
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -23,8 +25,11 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     <div className="flex-shrink-0 flex items-center">
-                        <Link to="/" className="text-2xl font-bold font-display text-primary">
-                            Fab Foods
+                        <Link to="/" className="flex items-center space-x-2">
+                            <img src={logo} alt="Fab Foods Logo" className="h-10 w-auto" />
+                            <span className="text-2xl font-bold font-display text-primary hidden sm:block">
+                                Fab Foods
+                            </span>
                         </Link>
                     </div>
 
