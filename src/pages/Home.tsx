@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Section from '../components/ui/Section';
 import { Link } from 'react-router-dom';
+import { openWhatsApp, WHATSAPP_TEMPLATES } from '../utils/whatsapp';
 import gallerySnacks from '../assets/food/gallery_snacks.jpg';
 import galleryLunch from '../assets/food/gallery_lunch.jpg';
 import galleryDinner from '../assets/food/gallery_dinner.jpg';
@@ -47,7 +48,7 @@ const Home = () => {
                                 Fab Foods is an innovative food and experience brand within Fab Lab Kigali Hub, serving meals, catering events and creating opportunity-driven communities through Prototype.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Button size="lg" className="group">
+                                <Button size="lg" className="group" onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.ORDER)}>
                                     Order Now <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </Button>
                                 <Link to="/services">
@@ -203,10 +204,19 @@ const Home = () => {
                         Whether you need daily lunch supply, catering for a hackathon, or event management support, we've got you covered.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <Button size="lg" className="bg-primary hover:bg-orange-600 text-white border-none px-10 shadow-lg shadow-primary/20">
+                        <Button
+                            size="lg"
+                            className="bg-primary hover:bg-orange-600 text-white border-none px-10 shadow-lg shadow-primary/20"
+                            onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.CATERING)}
+                        >
                             Contact for Catering
                         </Button>
-                        <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 hover:border-white px-10">
+                        <Button
+                            variant="outline"
+                            size="lg"
+                            className="border-white/30 text-white hover:bg-white/10 hover:border-white px-10"
+                            onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.PROTOTYPE)}
+                        >
                             Join Prototype
                         </Button>
                     </div>

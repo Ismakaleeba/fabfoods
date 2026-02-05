@@ -1,5 +1,6 @@
 import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
+import { openWhatsApp, WHATSAPP_TEMPLATES } from '../utils/whatsapp';
 import { ArrowRight } from 'lucide-react';
 import food2 from '../assets/food/cafe_4.jpg';
 import fablab_integration from '../assets/fablab_integration.jpg';

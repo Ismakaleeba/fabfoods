@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
+import { openWhatsApp, WHATSAPP_TEMPLATES } from '../utils/whatsapp';
 import serviceFood from '../assets/food/service_food.jpg';
 import serviceCatering from '../assets/food/service_catering.jpg';
 import serviceEvents from '../assets/food/service_events.jpg';
@@ -83,7 +84,12 @@ const Services = () => {
                                 </ul>
                             </div>
                             <div className="px-8 py-6 bg-slate-50 border-t border-slate-100">
-                                <Button variant="outline" size="sm" className="w-full border-slate-300 hover:bg-white hover:border-primary hover:text-primary transition-colors">
+                                <Button
+                                    variant="outline"
+                                    size="sm"
+                                    className="w-full border-slate-300 hover:bg-white hover:border-primary hover:text-primary transition-colors"
+                                    onClick={() => openWhatsApp(getTemplateMessage(category.title))}
+                                >
                                     {category.buttonText}
                                 </Button>
                             </div>
@@ -97,7 +103,7 @@ const Services = () => {
                 <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
                     We specialize in tailoring our services to meet the unique needs of innovation hubs, hackathons, and corporate events.
                 </p>
-                <Button size="lg">Contact Us for a Quote</Button>
+                <Button size="lg" onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.GENERAL)}>Contact Us for a Quote</Button>
             </Section>
         </>
     );
