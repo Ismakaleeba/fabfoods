@@ -12,6 +12,10 @@ import galleryDrinks from '../assets/food/gallery_drinks.jpg';
 import gallerySpecialties from '../assets/food/gallery_specialties.jpg';
 import kitchenImg from '../assets/food/IMG_0687.jpg';
 import whoWeServeImg from '../assets/who_we_serve.jpg';
+import serviceFood from '../assets/food/service_food.jpg';
+import serviceCatering from '../assets/food/service_catering.jpg';
+import serviceEvents from '../assets/food/service_events.jpg';
+import servicePrototype from '../assets/food/service_prototype.jpg';
 
 const Home = () => {
     const galleryItems = [
@@ -58,33 +62,38 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* What We Do */}
             <Section
                 title="What We Do"
-                subtitle=" delivering meals, snacks and opportunity-driven experiences."
+                subtitle="Fueling the ecosystem with culinary excellence and professional event support."
                 background="gray"
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <Card
-                        title="Food & Snacks"
-                        description="Lunch meals, pizza, coffee and a wide range of snacks for daily customers and teams."
-                        icon={<Utensils className="w-6 h-6" />}
-                    />
-                    <Card
-                        title="Catering & Deliveries"
-                        description="Outside catering and lunch deliveries for offices, big buildings and malls."
-                        icon={<Truck className="w-6 h-6" />}
-                    />
-                    <Card
-                        title="Event Management"
-                        description="End-to-end food and event support for hackathons, workshops and special trainings."
-                        icon={<Calendar className="w-6 h-6" />}
-                    />
-                    <Card
-                        title="Prototype Platform"
-                        description="Curated networking events and a digital platform connecting young people to real opportunities."
-                        icon={<Lightbulb className="w-6 h-6" />}
-                    />
+                    {[
+                        { title: "Food & Snacks", desc: "Lunch meals, pizza and specialty coffee for innovators.", img: serviceFood },
+                        { title: "Catering & Deliveries", desc: "Professional catering for offices and corporate buildings.", img: serviceCatering },
+                        { title: "Event Management", desc: "End-to-end support for hackathons and workshops.", img: serviceEvents },
+                        { title: "Prototype Platform", desc: "Curated networking and opportunity matching.", img: servicePrototype }
+                    ].map((service, idx) => (
+                        <motion.div
+                            key={idx}
+                            whileHover={{ y: -8 }}
+                            className="relative h-[300px] rounded-2xl overflow-hidden shadow-xl group border border-white/10"
+                        >
+                            <img
+                                src={service.img}
+                                alt={service.title}
+                                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
+                            <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                                <h3 className="text-xl font-bold text-white mb-2 font-display">{service.title}</h3>
+                                <p className="text-slate-300 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    {service.desc}
+                                </p>
+                                <div className="w-8 h-1 bg-primary mt-2 group-hover:w-16 transition-all duration-300"></div>
+                            </div>
+                        </motion.div>
+                    ))}
                 </div>
             </Section>
 
