@@ -118,10 +118,21 @@ const Home = () => {
                             </p>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                            {['Food', 'Logistics', 'Catering', 'Event Experience', 'Community Networking'].map((item) => (
-                                <div key={item} className="flex items-center space-x-2">
-                                    <div className="w-2 h-2 rounded-full bg-primary"></div>
-                                    <span className="font-medium text-secondary">{item}</span>
+                            {[
+                                { name: 'Gourmet Food', icon: <Utensils className="w-5 h-5 text-primary" />, desc: 'Freshly prepared meals.' },
+                                { name: 'Seamless Logistics', icon: <Truck className="w-5 h-5 text-primary" />, desc: 'On-time delivery every time.' },
+                                { name: 'Premium Catering', icon: <ChefHat className="w-5 h-5 text-primary" />, desc: 'Tailored for your events.' },
+                                { name: 'Event Experience', icon: <Sparkles className="w-5 h-5 text-primary" />, desc: 'Memorable innovation vibes.' },
+                                { name: 'Community Hub', icon: <Users className="w-5 h-5 text-primary" />, desc: 'Connecting young innovators.' }
+                            ].map((item) => (
+                                <div key={item.name} className="flex items-start space-x-3 p-3 rounded-xl bg-slate-50 border border-slate-100 hover:border-primary/20 hover:bg-white transition-all group">
+                                    <div className="p-2 rounded-lg bg-white shadow-sm group-hover:scale-110 transition-transform">
+                                        {item.icon}
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-secondary text-sm">{item.name}</h4>
+                                        <p className="text-xs text-slate-500">{item.desc}</p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
