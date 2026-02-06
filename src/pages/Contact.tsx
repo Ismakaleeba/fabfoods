@@ -30,7 +30,7 @@ const Contact = () => {
                             </a>
 
                             <div className="flex items-center p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
-                                <div className="bg-slate-100 text-slate-600 p-3 rounded-lg mr-4">
+                                <div className="bg-accent/10 text-secondary/70 p-3 rounded-lg mr-4">
                                     <Phone size={24} />
                                 </div>
                                 <div>
@@ -40,7 +40,7 @@ const Contact = () => {
                             </div>
 
                             <div className="flex items-center p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
-                                <div className="bg-slate-100 text-slate-600 p-3 rounded-lg mr-4">
+                                <div className="bg-accent/10 text-secondary/70 p-3 rounded-lg mr-4">
                                     <Mail size={24} />
                                 </div>
                                 <div>
@@ -50,7 +50,7 @@ const Contact = () => {
                             </div>
 
                             <div className="flex items-center p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
-                                <div className="bg-slate-100 text-slate-600 p-3 rounded-lg mr-4">
+                                <div className="bg-accent/10 text-secondary/70 p-3 rounded-lg mr-4">
                                     <MapPin size={24} />
                                 </div>
                                 <div>
