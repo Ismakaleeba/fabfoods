@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Utensils, Truck, ChefHat, Sparkles, Users } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Section from '../components/ui/Section';
 import { Link } from 'react-router-dom';
@@ -119,16 +119,14 @@ const Home = () => {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                             {[
-                                { name: 'Gourmet Food', icon: <Utensils className="w-5 h-5 text-primary" />, desc: 'Freshly prepared meals.' },
-                                { name: 'Seamless Logistics', icon: <Truck className="w-5 h-5 text-primary" />, desc: 'On-time delivery every time.' },
-                                { name: 'Premium Catering', icon: <ChefHat className="w-5 h-5 text-primary" />, desc: 'Tailored for your events.' },
-                                { name: 'Event Experience', icon: <Sparkles className="w-5 h-5 text-primary" />, desc: 'Memorable innovation vibes.' },
-                                { name: 'Community Hub', icon: <Users className="w-5 h-5 text-primary" />, desc: 'Connecting young innovators.' }
+                                { name: 'Gourmet Food', desc: 'Freshly prepared meals.' },
+                                { name: 'Seamless Logistics', desc: 'On-time delivery every time.' },
+                                { name: 'Premium Catering', desc: 'Tailored for your events.' },
+                                { name: 'Event Experience', desc: 'Memorable innovation vibes.' },
+                                { name: 'Community Hub', desc: 'Connecting young innovators.' }
                             ].map((item) => (
-                                <div key={item.name} className="flex items-start space-x-3 p-3 rounded-xl bg-accent/5 border border-accent/10 hover:border-primary/20 hover:bg-white transition-all group">
-                                    <div className="p-2 rounded-lg bg-white shadow-sm group-hover:scale-110 transition-transform">
-                                        {item.icon}
-                                    </div>
+                                <div key={item.name} className="flex items-start space-x-3 p-3 rounded-xl bg-accent/5 border border-accent/10 hover:border-primary/20 hover:bg-white transition-all group lg:items-center">
+                                    <div className="w-2 h-2 rounded-full bg-primary mt-1.5 lg:mt-0 flex-shrink-0"></div>
                                     <div>
                                         <h4 className="font-bold text-secondary text-sm">{item.name}</h4>
                                         <p className="text-xs text-slate-500">{item.desc}</p>

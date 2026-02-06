@@ -1,4 +1,4 @@
-import { Users, Zap, Target, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
 import { openWhatsApp, WHATSAPP_TEMPLATES } from '../utils/whatsapp';
@@ -42,27 +42,21 @@ const Prototype = () => {
                         </p>
                         <div className="space-y-4 pt-4">
                             <div className="flex items-start">
-                                <div className="bg-accent/20 p-2 rounded-lg mr-4 text-primary text-secondary">
-                                    <Users size={24} />
-                                </div>
+                                <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-4 flex-shrink-0"></div>
                                 <div>
                                     <h4 className="font-bold text-secondary">Curated Networking</h4>
                                     <p className="text-slate-600">Connect with mentors and peers who matter.</p>
                                 </div>
                             </div>
                             <div className="flex items-start">
-                                <div className="bg-accent/20 p-2 rounded-lg mr-4 text-primary text-secondary">
-                                    <Zap size={24} />
-                                </div>
+                                <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-4 flex-shrink-0"></div>
                                 <div>
                                     <h4 className="font-bold text-secondary">Opportunity Access</h4>
                                     <p className="text-slate-600">Direct links to jobs, internships, and programs.</p>
                                 </div>
                             </div>
                             <div className="flex items-start">
-                                <div className="bg-accent/20 p-2 rounded-lg mr-4 text-primary text-secondary">
-                                    <Target size={24} />
-                                </div>
+                                <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-4 flex-shrink-0"></div>
                                 <div>
                                     <h4 className="font-bold text-secondary">Skill Building</h4>
                                     <p className="text-slate-600">Workshops and talks that teach real-world skills.</p>
