@@ -30,9 +30,9 @@ const Home = () => {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-slate-900 to-slate-800 text-white overflow-hidden">
+            <section className="relative min-h-[90vh] flex items-center bg-secondary text-white overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-20 filter blur-sm"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent"></div>
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 md:py-0">
                     <div className="max-w-3xl">
@@ -84,7 +84,7 @@ const Home = () => {
                                 alt={service.title}
                                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/40 to-transparent"></div>
                             <div className="absolute inset-0 p-6 flex flex-col justify-end">
                                 <h3 className="text-xl font-bold text-white mb-2 font-display">{service.title}</h3>
                                 <p className="text-slate-300 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
