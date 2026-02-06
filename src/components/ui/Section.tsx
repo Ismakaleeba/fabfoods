@@ -17,7 +17,7 @@ const Section = ({
     className = '',
     background = 'white'
 }: SectionProps) => {
-    const bgClass = background === 'gray' ? 'bg-slate-50' : 'bg-white';
+    const bgClass = background === 'gray' ? 'bg-accent/5' : 'bg-white';
 
     return (
         <section id={id} className={`py-16 md:py-24 ${bgClass} ${className}`}>

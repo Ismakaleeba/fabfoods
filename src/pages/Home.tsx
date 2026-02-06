@@ -125,7 +125,7 @@ const Home = () => {
                                 { name: 'Event Experience', icon: <Sparkles className="w-5 h-5 text-primary" />, desc: 'Memorable innovation vibes.' },
                                 { name: 'Community Hub', icon: <Users className="w-5 h-5 text-primary" />, desc: 'Connecting young innovators.' }
                             ].map((item) => (
-                                <div key={item.name} className="flex items-start space-x-3 p-3 rounded-xl bg-slate-50 border border-slate-100 hover:border-primary/20 hover:bg-white transition-all group">
+                                <div key={item.name} className="flex items-start space-x-3 p-3 rounded-xl bg-accent/5 border border-accent/10 hover:border-primary/20 hover:bg-white transition-all group">
                                     <div className="p-2 rounded-lg bg-white shadow-sm group-hover:scale-110 transition-transform">
                                         {item.icon}
                                     </div>
