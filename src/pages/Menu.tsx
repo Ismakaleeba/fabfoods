@@ -83,7 +83,7 @@ const Menu = () => {
     return (
         <>
             {/* Hero & Philosophy */}
-            <div className="bg-slate-900 text-white py-24 relative overflow-hidden">
+            <div className="bg-secondary text-white py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img src={food3} alt="Philosophy Background" className="w-full h-full object-cover" />
                 </div>
@@ -157,7 +157,7 @@ const Menu = () => {
                             {/* Background Image with Overlay */}
                             <div className="absolute inset-0 z-0">
                                 <img src={cat.image} alt={cat.category} className="w-full h-full object-cover" />
-                                <div className="absolute inset-0 bg-slate-900/85 backdrop-blur-[1px]"></div>
+                                <div className="absolute inset-0 bg-secondary/85 backdrop-blur-[1px]"></div>
                             </div>
 
                             {/* Content */}
@@ -223,7 +223,7 @@ const Menu = () => {
                     </p>
                     <Button
                         size="lg"
-                        className="bg-primary hover:bg-orange-600 text-white border-none px-10 shadow-lg"
+                        className="bg-primary hover:bg-primary/90 text-white border-none px-10 shadow-lg"
                         onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.ORDER)}
                     >
                         Order via WhatsApp Now

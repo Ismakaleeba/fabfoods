@@ -8,7 +8,7 @@ import fablab_integration from '../assets/fablab_integration.jpg';
 const About = () => {
     return (
         <>
-            <div className="bg-slate-900 text-white py-20">
+            <div className="bg-secondary text-white py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold font-display mb-6">About Fab Foods</h1>
                     <p className="text-xl text-slate-300 max-w-2xl mx-auto">
@@ -46,7 +46,7 @@ const About = () => {
                         alt="Fab Lab Kigali Workspace"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-[2px]"></div>
+                    <div className="absolute inset-0 bg-secondary/80 backdrop-blur-[2px]"></div>
                 </div>
 
                 <div className="relative z-10 w-full text-white">
@@ -82,7 +82,7 @@ const About = () => {
                     <div className="flex justify-center">
                         <Button
                             size="lg"
-                            className="px-12 py-4 text-lg shadow-xl hover:shadow-primary/30 transition-all"
+                            className="px-12 py-4 text-lg shadow-xl hover:shadow-primary/30 transition-all bg-primary hover:bg-primary/90 border-none"
                             onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.GENERAL)}
                         >
                             Get in Touch <ArrowRight className="ml-2 w-6 h-6" />

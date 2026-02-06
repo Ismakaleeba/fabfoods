@@ -167,14 +167,14 @@ const Home = () => {
             </Section>
 
             {/* Who We Serve */}
-            <Section className="relative h-[600px] flex items-center overflow-hidden bg-slate-900">
+            <Section className="relative h-[600px] flex items-center overflow-hidden bg-secondary">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={whoWeServeImg}
                         alt="Who We Serve Background"
                         className="w-full h-full object-cover opacity-20 blur-[2px]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-slate-900"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-secondary"></div>
                 </div>
 
                 <div className="relative z-10 w-full">
@@ -205,7 +205,7 @@ const Home = () => {
             </Section>
 
             {/* CTA */}
-            <Section className="!bg-slate-900 text-white rounded-3xl mx-4 my-16 shadow-2xl relative overflow-hidden">
+            <Section className="!bg-secondary text-white rounded-3xl mx-4 my-16 shadow-2xl relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img src={galleryDinner} alt="CTA Background" className="w-full h-full object-cover" />
                 </div>
@@ -217,7 +217,7 @@ const Home = () => {
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
                         <Button
                             size="lg"
-                            className="bg-primary hover:bg-orange-600 text-white border-none px-10 shadow-lg shadow-primary/20"
+                            className="bg-primary hover:bg-primary/90 text-white border-none px-10 shadow-lg shadow-primary/20"
                             onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.CATERING)}
                         >
                             Contact for Catering

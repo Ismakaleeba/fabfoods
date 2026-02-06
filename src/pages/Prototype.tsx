@@ -21,7 +21,7 @@ const Prototype = () => {
                             A digital platform and event series that connects young people to real opportunities, mentors, and innovation communities.
                         </p>
                         <Button
-                            className="bg-primary text-white hover:bg-orange-700 border-none transition-all shadow-lg hover:shadow-primary/25"
+                            className="bg-primary text-white hover:bg-primary/90 border-none transition-all shadow-lg hover:shadow-primary/25"
                             onClick={() => openWhatsApp(WHATSAPP_TEMPLATES.PROTOTYPE)}
                         >
                             Join the Community <ArrowRight className="ml-2 w-5 h-5" />

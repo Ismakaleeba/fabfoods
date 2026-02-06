@@ -64,7 +64,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-slate-700 mt-12 pt-8 text-center text-sm">
+                <div className="border-t border-white/10 mt-12 pt-8 text-center text-sm">
                     <p>&copy; {new Date().getFullYear()} Fab Foods. All rights reserved.</p>
                 </div>
             </div>
