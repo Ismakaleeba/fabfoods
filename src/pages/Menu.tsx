@@ -124,7 +124,7 @@ const Menu = () => {
                             <p className="text-sm text-slate-600 mb-4">{dish.description}</p>
                             <div className="flex flex-wrap gap-2">
                                 {dish.tags.map(tag => (
-                                    <span key={tag} className="text-[10px] font-medium px-2 py-0.5 bg-slate-100 text-slate-500 rounded-md border border-slate-200 uppercase">
+                                    <span key={tag} className="text-[10px] font-medium px-2 py-0.5 bg-accent/10 text-secondary/70 rounded-md border border-accent/20 uppercase">
                                         {tag}
                                     </span>
                                 ))}

@@ -90,7 +90,7 @@ const Services = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="px-8 py-6 bg-slate-50 border-t border-slate-100">
+                            <div className="px-8 py-6 bg-accent/5 border-t border-accent/10">
                                 <Button
                                     variant="outline"
                                     size="sm"

@@ -42,7 +42,7 @@ const Prototype = () => {
                         </p>
                         <div className="space-y-4 pt-4">
                             <div className="flex items-start">
-                                <div className="bg-orange-50 p-2 rounded-lg mr-4 text-primary">
+                                <div className="bg-accent/20 p-2 rounded-lg mr-4 text-primary text-secondary">
                                     <Users size={24} />
                                 </div>
                                 <div>
@@ -51,7 +51,7 @@ const Prototype = () => {
                                 </div>
                             </div>
                             <div className="flex items-start">
-                                <div className="bg-orange-50 p-2 rounded-lg mr-4 text-primary">
+                                <div className="bg-accent/20 p-2 rounded-lg mr-4 text-primary text-secondary">
                                     <Zap size={24} />
                                 </div>
                                 <div>
@@ -60,7 +60,7 @@ const Prototype = () => {
                                 </div>
                             </div>
                             <div className="flex items-start">
-                                <div className="bg-orange-50 p-2 rounded-lg mr-4 text-primary">
+                                <div className="bg-accent/20 p-2 rounded-lg mr-4 text-primary text-secondary">
                                     <Target size={24} />
                                 </div>
                                 <div>
@@ -71,7 +71,7 @@ const Prototype = () => {
                         </div>
                     </div>
                     <div className="relative">
-                        <div className="absolute inset-0 bg-slate-200 rounded-3xl transform rotate-3 scale-95 opacity-50"></div>
+                        <div className="absolute inset-0 bg-accent/10 rounded-3xl transform rotate-3 scale-95 opacity-50"></div>
                         <img
                             src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2670&auto=format&fit=crop"
                             alt="Prototype Event"

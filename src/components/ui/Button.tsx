@@ -17,9 +17,9 @@ const Button = ({
     const baseStyles = "inline-flex items-center justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background";
 
     const variants = {
-        primary: "bg-primary text-white hover:bg-orange-700",
-        secondary: "bg-secondary text-white hover:bg-slate-700",
-        outline: "border border-input hover:bg-slate-100 hover:text-slate-900 border-slate-200"
+        primary: "bg-primary text-white hover:bg-primary/90",
+        secondary: "bg-secondary text-white hover:bg-secondary/90",
+        outline: "border border-input hover:bg-accent/20 hover:text-secondary border-accent/30"
     };
 
     const sizes = {

@@ -17,7 +17,7 @@ const Card = ({ title, description, icon, className = '', onClick }: CardProps) 
             onClick={onClick}
         >
             {icon && (
-                <div className="mb-4 text-primary bg-orange-50 w-12 h-12 flex items-center justify-center rounded-lg">
+                <div className="mb-4 text-primary bg-accent/20 w-12 h-12 flex items-center justify-center rounded-lg">
                     {icon}
                 </div>
             )}
